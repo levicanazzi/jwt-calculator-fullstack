@@ -16,14 +16,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"username\": \"usuario\",\r\n  \"password\": \"senha\"\r\n}",
+							"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin2024\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://localhost:7067/api/Auth/login"
+						"url": "http://localhost:8080/api/auth/login"
 					},
 					"response": []
 				},
@@ -34,14 +34,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"username\": \"usuario\",\r\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidXN1YXJpbyIsIlRva2VuVHlwZSI6InJlZnJlc2gtdG9rZW4iLCJleHAiOjE3MDU3MDI5NzQsImlzcyI6InN1YS1pc3N1ZXIiLCJhdWQiOiJzdWEtYXVkaWVuY2UifQ.5xZDCAkH7gVa8_8lSK4oLd3R8Zr2ZJVXUgP5a1flnQ8\"\r\n}",
+							"raw": "{\r\n  \"username\": \"admin\",\r\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJUb2tlblR5cGUiOiJyZWZyZXNoLXRva2VuIiwiZXhwIjoxNzA1Nzk4ODQxLCJpc3MiOiJ5b3VyLWlzc3VlciIsImF1ZCI6InlvdXItYXVkaWVuY2UifQ.DUAz602RhvdgBqc2TI_FZqGe05cT_ryrd41EpNb0JK0\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://localhost:7067/api/Auth/refresh-token"
+						"url": "http://localhost:8080/api/Auth/refresh-token"
 					},
 					"response": []
 				}
@@ -56,21 +56,21 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJUb2tlblR5cGUiOiJhY2Nlc3MtdG9rZW4iLCJleHAiOjE3MDU3MDQwNDcsImlzcyI6InN1YS1pc3N1ZXIiLCJhdWQiOiJzdWEtYXVkaWVuY2UifQ.oI3XOV1UM15hCOy-8bLqNUbVixIViHqaK_CJjJ3YXJI"
+								"token": ""
 							}
 						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"firstValue\": 2,\r\n  \"secondValue\": 0,\r\n  \"operation\": \"Subtraction\"\r\n  }",
+							"raw": "{\r\n  \"firstValue\": 2,\r\n  \"secondValue\": 2,\r\n  \"operation\": \"sum\"\r\n  }",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://localhost:7067/api/Calculator/calculate"
+						"url": "http://localhost:8080/api/Calculator/calculate"
 					},
 					"response": []
 				}
